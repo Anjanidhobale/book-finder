@@ -1,16 +1,130 @@
-# React + Vite
+📘 Book Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Book Finder web application built using React, Vite, and Tailwind CSS.
+The app allows users to search for books by title using the Open Library public API and view basic book details.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 Live Application:
+https://anjani-book-finder.netlify.app
 
-## React Compiler
+🔗 GitHub Repository:
+https://github.com/Anjanidhobale/book-finder
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
 
-## Expanding the ESLint configuration
+🔍 Search books by title
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⌨️ Search using Enter key or button click
+
+📚 Displays book title, author, and first publish year
+
+⚠️ Handles:
+
+Empty search input
+
+Loading state
+
+No results found
+
+API errors
+
+🎨 Clean and responsive UI using Tailwind CSS
+
+⚡ Fast development with Vite
+
+🌐 Deployed with Netlify (CI/CD via GitHub)
+
+🛠️ Tech Stack
+
+Frontend: React (with Hooks)
+
+Build Tool: Vite
+
+Styling: Tailwind CSS
+
+API: Open Library Search API
+
+Deployment: Netlify
+
+Version Control: Git & GitHub
+
+📂 Project Structure
+book-finder/
+│
+├── public/
+│   └── _redirects
+│
+├── src/
+│   ├── components/
+│   │   └── SearchBar.jsx
+│   ├── pages/
+│   │   └── Home.jsx
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+
+🔌 API Used
+
+Open Library Search API
+
+Example:
+
+https://openlibrary.org/search.json?q=harry+potter
+
+
+No authentication or API key required.
+
+⚙️ Local Setup Instructions
+
+Follow these steps to run the project locally:
+
+1️⃣ Clone the repository
+git clone https://github.com/Anjanidhobale/book-finder.git
+cd book-finder
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start development server
+npm run dev
+
+
+The app will run at:
+
+http://localhost:5173
+
+📦 Build for Production
+npm run build
+
+
+The production-ready files will be generated in the dist/ folder.
+
+🌐 Deployment
+
+The project is deployed on Netlify with continuous deployment enabled via GitHub.
+Every push to the main branch triggers an automatic redeploy.
+
+🧠 Future Improvements (Optional)
+
+Add pagination or infinite scroll
+
+Add book cover images
+
+Add filters (author, year)
+
+Improve accessibility (ARIA labels)
+
+Add unit tests
+
+👤 Author
+
+Anjani Dhobale
+Frontend Developer (React)
